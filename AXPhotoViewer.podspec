@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AXPhotoViewer"
-  s.version         = "1.8.0"
+  s.version         = "1.8.1"
   s.license         = { :type  => 'MIT', :file => 'LICENSE.md' }
   s.summary         = "An iOS/tvOS photo gallery viewer, useful for viewing a large number of photos."
   s.homepage        = "https://github.com/alexhillc/AXPhotoViewer"
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |cs|
     cs.ios.dependency  'AXStateButton', '>= 1.1.3'
-    cs.ios.dependency  'FLAnimatedImage', '>= 1.0.0'
+    cs.ios.dependency  'FLAnimatedImage', '>= 1.0.14'
     cs.tvos.dependency 'FLAnimatedImage-tvOS', '>= 1.0.16'
     cs.resources     = 'Assets/*.{xcassets}'
     cs.source_files  = 'Source/*.{swift,h,m}',
