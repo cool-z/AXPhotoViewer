@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AXPhotoViewer"
-  s.version         = "1.7.1"
+  s.version         = "1.8.0"
   s.license         = { :type  => 'MIT', :file => 'LICENSE.md' }
   s.summary         = "An iOS/tvOS photo gallery viewer, useful for viewing a large number of photos."
   s.homepage        = "https://github.com/alexhillc/AXPhotoViewer"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
                        'Source/Extensions/*.{swift,h,m}',
                        'Source/Utilities/*.{swift,h,m}',
                        'Source/Integrations/SimpleNetworkIntegration.swift'
-    cs.frameworks    = 'MobileCoreServices', 'ImageIO', 'UIKit', 'QuartzCore'
+    cs.frameworks    = 'ImageIO', 'UIKit', 'QuartzCore'
   end
 
   s.subspec 'SDWebImage' do |ss|
